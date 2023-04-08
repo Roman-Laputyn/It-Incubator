@@ -62,3 +62,12 @@ function getGrade(s1, s2, s3) {
     return 'F';
   }
 }
+
+//Abbreviate a Two Word Name
+//Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+function abbrevName(name) {
+  let splitedName = name.split(' ');
+  let firstInitial = splitedName[0][0].toUpperCase();
+  let secondInitial = splitedName[1][0].toUpperCase();
+  return firstInitial + '.' + secondInitial;
+}
