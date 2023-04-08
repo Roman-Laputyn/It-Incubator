@@ -38,3 +38,10 @@ function numberToString(num) {
     console.log('Insert number !');
   }
 }
+
+//Convert number to reversed array of digits
+function digitize(n) {
+  let reverseStringArray = n.toString().split('').reverse();
+  let toDigits = reverseStringArray.map(Number);
+  return toDigits;
+}
