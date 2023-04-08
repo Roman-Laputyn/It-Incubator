@@ -29,3 +29,12 @@ function makeNegative(num) {
     return num;
   }
 }
+
+// Convert a Number to a String!
+function numberToString(num) {
+  if (typeof num === 'number') {
+    return num.toString();
+  } else {
+    console.log('Insert number !');
+  }
+}
