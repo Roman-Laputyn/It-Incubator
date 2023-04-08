@@ -45,3 +45,20 @@ function digitize(n) {
   let toDigits = reverseStringArray.map(Number);
   return toDigits;
 }
+
+//Grade book
+//Complete the function so that it finds the average of the three scores passed to it and returns the letter value associated with that grade.
+function getGrade(s1, s2, s3) {
+  let averageScope = Array(s1, s2, s3).reduce((acc, v) => acc + v) / Array(s1, s2, s3).length;
+  if (averageScope >= 90 && averageScope <= 100) {
+    return 'A';
+  } else if (averageScope >= 80 && averageScope < 90) {
+    return 'B';
+  } else if (averageScope >= 70 && averageScope < 80) {
+    return 'C';
+  } else if (averageScope >= 60 && averageScope < 70) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
