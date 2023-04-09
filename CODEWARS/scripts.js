@@ -86,3 +86,26 @@ var countSheep = function (num) {
     return arr.join('');
   }
 };
+
+//Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+function countPositivesSumNegatives(input) {
+  let arrNegative = [];
+  let arrPositive = [];
+
+  if (input === null) {
+    return [];
+  } else if (input.length === 0 || !Array.isArray(input)) {
+    return [];
+  } else {
+    input.forEach((item) => {
+      if (item < 0) {
+        arrNegative.push(item);
+      } else if (item > 0) {
+        arrPositive.push(item);
+      }
+    });
+    let sumNegative = arrNegative.reduce((acc, a) => acc + a, 0);
+    let countPositive = arrPositive.length;
+    return Array(countPositive, sumNegative);
+  }
+}
