@@ -114,3 +114,9 @@ function countPositivesSumNegatives(input) {
 function repeatStr(n, s) {
   return s.repeat(n);
 }
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+function sumMix(x) {
+  let intNumber = x.map((item) => +item);
+  return intNumber.reduce((acc, a) => acc + a);
+}
