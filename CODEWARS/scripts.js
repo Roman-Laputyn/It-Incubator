@@ -129,3 +129,6 @@ const reverseSeq = (n) => {
   }
   return arr;
 };
+
+// function 'greet'
+const greet = () => 'hello world!';
