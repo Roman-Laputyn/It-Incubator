@@ -144,3 +144,8 @@ class SmallestIntegerFinder {
     return Math.min.apply(null, args);
   }
 }
+
+//Clock shows h hours, m minutes and s seconds after midnight.
+function past(h, m, s) {
+  return (h * 3600 + m * 60 + s) * 1000;
+}
