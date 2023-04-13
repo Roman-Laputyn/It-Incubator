@@ -137,3 +137,10 @@ const greet = () => 'hello world!';
 function boolToWord(bool) {
   return bool ? 'Yes' : 'No';
 }
+
+//Given an array of integers your solution should find the smallest integer.
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min.apply(null, args);
+  }
+}
